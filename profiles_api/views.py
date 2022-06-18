@@ -8,9 +8,9 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.settings import api_settings
 from rest_framework.permissions import IsAuthenticatedOrReadOnly # Permisos para los métodos de lectura, si se quita OrReadOnly solo los autenticados pueden leer
 
-from profile_api import serializers
-from profile_api import models # Importa el modelo de UserProfile
-from profile_api import permissions # Importa el permiso UpdateOwnProfile
+from profiles_api import serializers
+from profiles_api import models # Importa el modelo de UserProfile
+from profiles_api import permissions # Importa el permiso UpdateOwnProfile
 
 
 class HelloApiView(APIView):
